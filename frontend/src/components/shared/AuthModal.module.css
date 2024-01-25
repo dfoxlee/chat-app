@@ -1,0 +1,86 @@
+.wrapper {
+   position: fixed;
+   right: 10%;
+   top: 100px;
+   padding: 10px;
+   display: flex;
+   flex-flow: column;
+   z-index: 1;
+   width: 95vw;
+   max-width: 350px;
+   background-color: var(--clr-blue);
+   border-radius: 15px;
+}
+
+.closeModalBtn {
+   background: none;
+   border-style: none;
+   font-size: 2rem;
+   position: absolute;
+   cursor: pointer;
+   color: white;
+}
+
+.avatarImg {
+   font-size: 10rem;
+   margin: 30px auto 0;
+   color: white;
+}
+
+.inputWrapper {
+   margin: 10px auto 0;
+   padding: 0 10px;
+}
+
+.label {
+   color: white;
+}
+
+.input {
+   width: 100%;
+   background-color: var(--clr-light-grey);
+   border-style: none;
+   border-radius: 100px;
+   font-size: 1.125rem;
+   padding: 3px 10px;
+}
+
+.changeAuthTypeWrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+}
+
+.changeAuthQuestion {
+   font-weight: 400;
+   color: white;
+}
+
+.changeAuthBtn {
+   background: none;
+   border-style: none;
+   margin-left: 5px;
+   cursor: pointer;
+   color: var(--clr-yellow);
+}
+
+.authSubmitBtn {
+   margin: 15px auto 0;
+   padding: 3px 15px;
+   border-style: none;
+   background: none;
+   border: 1px solid;
+   cursor: pointer;
+   color: white;
+   border: 1px solid;
+   font-size: 1.25rem;
+   border-radius: 100px;
+}
+
+@media only screen and (max-width: 700px) {
+   .wrapper {
+      left: 50%;
+      transform: translateX(-50%);
+   }
+}

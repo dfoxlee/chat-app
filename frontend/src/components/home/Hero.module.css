@@ -1,0 +1,50 @@
+.container {
+   flex: 1 0 auto;
+   min-width: 100vw;
+   background: rgb(70, 207, 249);
+   background: linear-gradient(
+      170deg,
+      rgba(70, 207, 249, 0.8169468470982143) 27%,
+      rgba(70, 207, 249, 0.2903362028405112) 79%
+   );
+}
+
+.wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 90vw;
+   margin: 50px auto 0;
+}
+
+.peopleTalkingImg {
+   width: 90vw;
+   max-width: 700px;
+}
+
+.title {
+   color: var(--clr-blue);
+   font-size: 5rem;
+   max-width: 600px;
+}
+
+.titleSubText {
+   font-size: 1rem;
+   font-weight: 500;
+   color: white;
+   max-width: 600px;
+   line-height: 2;
+   margin-top: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+   .title {
+      font-size: 3rem;
+      text-align: center;
+   }
+
+   .titleSubText {
+      text-align: center;
+   }
+}

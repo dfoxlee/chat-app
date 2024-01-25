@@ -1,0 +1,130 @@
+.container {
+   flex: 2 1 auto;
+   display: flex;
+   justify-content: center;
+   align-items: start;
+}
+
+.wrapper {
+   display: flex;
+   flex-flow: column;
+   max-width: 600px;
+   background-color: white;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.title {
+   text-align: center;
+   font-weight: 500;
+   font-size: 1.55rem;
+   color: var(--clr-blue);
+}
+
+.messagesContainer {
+   flex: 1 0 auto;
+   width: 100%;
+   max-height: 55vh;
+   display:flex;
+   flex-direction: column-reverse;
+   overflow: scroll;
+   margin: 30px auto;
+   padding-right: 15px;
+}
+
+.messageWrapper {
+   padding: 5px 10px;
+   border-radius: 5px;
+   max-width: 250px;
+   border: 1px solid var(--clr-blue);
+}
+
+.dateScreenNameWrapper {
+   display: flex;
+}
+
+.messageName {
+   margin-left: 10px;
+}
+
+.userMessage {
+   display: flex;
+   justify-content: end;
+   margin: 10px 0;
+   color: var(--clr-blue);
+}
+
+.friendMessage {
+   display: flex;
+   justify-content: start;
+   margin: 10px 0;
+   color: var(--clr-blue);
+}
+
+.messageDate {
+   font-weight: 300;
+   color: var(--clr-grey);
+}
+
+.messageName {
+   color: var(--clr-grey);
+   font-weight: 300;
+}
+
+.message {
+   font-weight: 500;
+   font-size: 1.25rem;
+}
+
+.messageInputWrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.messageInput {
+   padding: 5px 15px;
+   font-size: 1.25rem;
+   font-weight: 400;
+   border-style: none;
+   background-color: var(--clr-grey);
+   border-radius: 100px;
+   color: white;
+   width: 100%;
+}
+
+.messageBtn {
+   background: none;
+   border-style: none;
+   cursor: pointer;
+   font-size: 4rem;
+   color: var(--clr-blue);
+
+}
+
+.noChatTitle {
+   font-size: 1.25rem;
+   text-align: center;
+   font-weight: 500;
+   margin-top: 50px;
+   color: var(--clr-grey);
+}
+
+.noMessageTitle {
+   text-align: center;
+   font-weight: 500;
+   margin-top: 15px;
+   font-size: 2rem;
+   color: var(--clr-grey);
+}
+
+@media only screen and (max-width: 700px) {
+   .container {
+      display: none;
+   }
+
+   .containerOpen {
+      display: initial;
+   }
+}

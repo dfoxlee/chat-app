@@ -1,0 +1,48 @@
+.container {
+   /* position: fixed; */
+   min-width: 100vw;
+   z-index: 1000;
+   background-color: var(--clr-blue);
+   overflow: hidden;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 90vw;
+   max-width: 1200px;
+   margin: 15px auto;
+
+}
+
+.titleWrapper {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.title {
+   font-weight: 500;
+   color: white;
+   margin-right: 15px;
+}
+
+.username {
+   font-weight: 300;
+   font-size: 1rem;
+   color: white;
+}
+
+.authBtnWrapper {
+   position: relative;
+}
+
+.authBtn {
+   background: none;
+   border-style: none;
+   margin-left: 10px;
+   cursor: pointer;
+   color: white;
+}
+
